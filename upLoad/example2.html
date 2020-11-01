@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文件上传2</title>
+</head>
+<body>
+        <form onsubmit="submit(e)" action="http://localhost:8888/upload" method="post" enctype="multipart/form-data" onsubmit="submit(e)">
+            <input type="file" name="image"/>
+            <input type="submit" value="提交"/>
+        </form>
+</body>
+</html>
+<script>
+    function submit(e){
+        e.preventDefault();
+    }
+    // let btn = document.querySelector("#btn"),
+    //     file = document.querySelector("#file")
+    // btn.onclick=(e)=>{
+    //     e.preventDefault()
+    //     let form = new FormData()
+    //     form.append("image",file)
+    //     let xhr = new XMLHttpRequest()
+    //     xhr.open("post","http://127.0.0.1:8888/up",true)
+    //     xhr.onload = function(data){
+    //         console.log(data)
+    //     }
+    //     xhr.send(form)
+    // }
+</script>

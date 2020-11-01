@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手写简易的Vue</title>
+</head>
+<body>
+    <div id="app">
+        <!-- <div>{{ erro }}</div> -->
+        <div >
+            {{message}}
+            <input x-model="message" class="myc" />
+        </div>
+    </div>
+</body>
+</html>
+<script src="./myVue.js"></script>
+<script>
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            message:"成功手写插值表达式",
+            erro:"错误消息"
+        }
+    })
+    setTimeout(() => {
+        vm._data.message = "信息修改了";
+        vm._data.erro = "错误修改了";
+    }, 1000);
+</script>

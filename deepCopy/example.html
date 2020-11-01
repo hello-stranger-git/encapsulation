@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>深拷贝</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script src="./deepCopy.js"></script>
+<script>
+
+    //深拷贝对象
+    let obj = {
+        name:"tom",
+        arr:[1,3,4,5],
+        ageObj:{
+            age:1,
+            name:"jack"
+        }
+    }
+    let dep = new DeepCopy()
+    let copyObj =dep.deep([],obj)
+    copyObj.ageObj.age=100
+    console.log(copyObj)
+    console.log(obj)
+
+
+    //深拷贝数组
+    // let arr = [1,2,3,{obj:1}]
+    // let dep = new DeepCopy()
+    // let copyArray =dep.deep([],arr)
+    // copyArray[3].obj=100
+    // console.log(copyArray)
+    // console.log(arr)
+</script>

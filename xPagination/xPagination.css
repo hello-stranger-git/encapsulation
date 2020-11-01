@@ -1,0 +1,35 @@
+.number{
+    list-style: none;
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+    background-color: #f4f4f5;
+    border-radius: 2px;
+    float: left;
+    color:#606266;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.active{
+    cursor: default;
+    background-color: #409eff;
+    color: #fff;
+}
+.pager{
+    display: inline-block;
+    vertical-align:middle;
+    padding: 0px;
+}
+.btn{
+    margin: 0 5px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #f4f4f5;
+    border-radius: 2px;
+    border: 0px;
+    color:#606266;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}

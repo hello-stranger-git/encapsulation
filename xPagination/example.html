@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分页</title>
+    <link rel="stylesheet" href="./xPagination.css" />
+</head>
+<body>
+    <!-- <x-pagination id="pagination"></x-pagination> -->
+    <div id="pagination"></div>
+</body>
+</html>
+<script src="./xPagination.js"></script>
+<script>
+    let xPafination = new XPagination({
+        pageCount:12,//总共多少页码
+        pageCurrent:1,//当前选中页码
+        currentPage:item=>{//切换页码触发事件,li是切换页码的元素
+            // console.log(item)
+        console.log(item.innerText)
+        }
+    })
+    document.querySelector("#pagination").appendChild(xPafination)
+    xPafination.prevBtnClick(item=>{
+        console.log("点击上一页")
+        // console.log(item)
+        console.log(item.innerText)
+    })
+    xPafination.nextBtnClick(item=>{
+        console.log("点击下一页")
+        // console.log(item)
+        console.log(item.innerText)
+    })
+</script>

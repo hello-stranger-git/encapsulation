@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文件上传1</title>
+</head>
+<body>
+    <input type="file" id="file"/>
+    <button value="提交" id="btn">提交</button>
+</body>
+</html>
+<script>
+    let btn = document.querySelector("#btn")
+    btn.onclick=(e)=>{
+        let file = document.querySelector("#file").files[0]
+        let xhr = new XMLHttpRequest()
+        xhr.open("post","/upload",true)
+        xhr.onload = function(data){
+            console.log(xhr.responseText)
+        }
+        let form = new FormData()
+        form.append("image",file)
+        form.append("name","zhangsan")
+        xhr.send(form)
+
+    }
+</script>

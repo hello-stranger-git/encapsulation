@@ -1,0 +1,107 @@
+.x-button{
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 500;
+}
+/* .x-button.x-button-default, */
+.x-button.x-button-default:hover{
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+.x-button.x-button-primary{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+.x-button.x-button-primary:hover{
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #fff;
+}
+.x-button.x-button-warning{
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+}
+.x-button.x-button-warning:hover{
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+}
+.x-button.x-button-danger{
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+}
+.x-button.x-button-danger:hover{
+    background: #f78989;
+    border-color: #f78989;
+    color: #fff;
+}
+/* 圆角样式 */
+.x-button.is-round{
+    border-radius: 20px;
+    padding: 12px 23px;
+}
+/* 禁用样式 */
+.x-button.is-disabled,
+.x-button.is-disabled:hover{
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+.x-button-primary.is-disabled,
+.x-button-primary.is-disabled:hover{
+    color: #fff;
+    background-color: #a0cfff;
+    border-color: #a0cfff;
+}
+.x-button-warning.is-disabled,
+.x-button-warning.is-disabled:hover{
+    color: #fff;
+    background-color: #f3d19e;
+    border-color: #f3d19e;
+}
+.x-button-danger.is-disabled,
+.x-button-danger.is-disabled:hover{
+    color: #fff;
+    background-color: #fab6b6;
+    border-color: #fab6b6;
+}
+
+/* 按钮大小 */
+.x-button-medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.x-button-small {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.x-button-mini {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* 文字按钮 */
+.x-button-text {
+    border-color: transparent;
+    color: #409eff;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,7 @@
+1、引入xPagination.css和xPagination.js文件
+2、创建一个XPagination对象
+3、里面可以传参数pageCount一共有多少页，pageCurrent当前选中的页码，currentPage直接点击切换页码触发事件，会返回一个当前点击对象
+4、将创建的这个对象添加到要添加的节点上
+5、prevBtnClick方法是点击点击上一页触发事件
+6、nextBtnClick方法是点击下一页触发事件
+详情看example.html
