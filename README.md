@@ -1,4 +1,4 @@
-# encapsulation
+# encapsulationm,基于基本的HTML组件的封装以及一些方法和框架的封装与学习
 iterator=>迭代器，主要对对象的迭代处理
 jquery=>类似jquery的封装
 myVue=>模仿vue，简写出相关的功能
