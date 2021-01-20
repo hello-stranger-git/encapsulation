@@ -3,6 +3,8 @@ import View from './router-view'
 class VueRouter {
   constructor (options) {
     this.$options = options
+
+    // 定义响应式数据current
     const initial = window.location.hash.slice(1) || '/'
     Vue.util.defineReactive(this, 'current', initial)
     // hash改变时
@@ -15,6 +17,7 @@ class VueRouter {
   }
 }
 let Vue
+// vue插件编写的方式install
 VueRouter.install = function (vue, opts) {
   Vue = vue
   Vue.mixin({
