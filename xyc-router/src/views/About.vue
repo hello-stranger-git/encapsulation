@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <router-link to="/about/aboutChildren">测试子集路由</router-link>
   </div>
 </template>
